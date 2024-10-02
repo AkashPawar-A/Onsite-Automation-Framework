@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.onsite.core_test.ListernerSetUp"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.onsite.debit_note.Create_DebitNote_With_Item_Test"/>
+      <class name="com.onsite.material_transfer.Create_Material_Transfer_Test"/>
+      <class name="com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test"/>
+      <class name="com.onsite.login.LoginWithNewUserTest"/>
+      <class name="com.onsite.debit_note.Delete_DebitNote_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
