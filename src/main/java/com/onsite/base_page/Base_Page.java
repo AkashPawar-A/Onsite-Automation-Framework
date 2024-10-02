@@ -25,6 +25,8 @@ public class Base_Page {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		PageFactory.initElements(driver, this);
 	}
+	
+	// this is local branch
 
 	public WebDriver getDriver() {
 		return driver;
