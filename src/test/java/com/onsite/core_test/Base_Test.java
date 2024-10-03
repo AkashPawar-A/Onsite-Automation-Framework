@@ -1,8 +1,15 @@
 package com.onsite.core_test;
 
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -65,6 +72,22 @@ public class Base_Test {
 	public void quitDriver() {
 		if (driver != null) {
 			driver.quit();
+			driver = null;
 		}
+	}
+	
+	public void captureScreenshot(String testName) {
+		String path = "C:\\Users\\hr\\OnsiteGit\\OnsiteTestQA\\ScreenShots\\";
+
+		try {
+	        TakesScreenshot screenshot = (TakesScreenshot)driver;
+	        File screenshotFile = screenshot.getScreenshotAs(OutputType.FILE);
+	        Path destinationFile = Paths.get(path, testName + ".png");
+	        Files.copy(screenshotFile.toPath(), destinationFile, StandardCopyOption.REPLACE_EXISTING);
+	        System.out.println("Screenshot taken for test: " + testName);
+	    } catch (Exception e) {
+	        System.out.println("Failed to capture screenshot for test: " + testName);
+	        e.printStackTrace();
+	    }
 	}
 }

@@ -2,92 +2,92 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-01T23:01:00 IST" name="Suite" finished-at="2024-10-01T23:03:24 IST" duration-ms="144658">
+  <suite started-at="2024-10-03T16:25:52 IST" name="Suite" finished-at="2024-10-03T16:28:05 IST" duration-ms="132509">
     <groups>
     </groups>
-    <test started-at="2024-10-01T23:01:00 IST" name="Test" finished-at="2024-10-01T23:03:24 IST" duration-ms="144658">
+    <test started-at="2024-10-03T16:25:52 IST" name="Test" finished-at="2024-10-03T16:28:05 IST" duration-ms="132509">
       <class name="com.onsite.debit_note.Create_DebitNote_With_Item_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:00 IST" name="setUpDriver" finished-at="2024-10-01T23:01:14 IST" duration-ms="14118" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@2f4948e4]" started-at="2024-10-03T16:25:52 IST" name="setUpDriver" finished-at="2024-10-03T16:26:06 IST" duration-ms="13527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:14 IST" name="setUp" finished-at="2024-10-01T23:01:14 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@2f4948e4]" started-at="2024-10-03T16:26:06 IST" name="setUp" finished-at="2024-10-03T16:26:06 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateDebitNoteWithItemTestPage()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:14 IST" name="verifyCreateDebitNoteWithItemTestPage" finished-at="2024-10-01T23:01:40 IST" duration-ms="25862" status="PASS">
+        <test-method signature="verifyCreateDebitNoteWithItemTestPage()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@2f4948e4]" started-at="2024-10-03T16:26:06 IST" name="verifyCreateDebitNoteWithItemTestPage" finished-at="2024-10-03T16:26:28 IST" duration-ms="22129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateDebitNoteWithItemTestPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:40 IST" name="teardown" finished-at="2024-10-01T23:01:40 IST" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@2f4948e4]" started-at="2024-10-03T16:26:28 IST" name="teardown" finished-at="2024-10-03T16:26:28 IST" duration-ms="375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:40 IST" name="quitDriver" finished-at="2024-10-01T23:01:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@2f4948e4]" started-at="2024-10-03T16:26:28 IST" name="quitDriver" finished-at="2024-10-03T16:26:28 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.onsite.debit_note.Create_DebitNote_With_Item_Test -->
       <class name="com.onsite.login.LoginWithNewUserTest">
-        <test-method signature="verifyLoginWithNewUser()[pri:0, instance:com.onsite.login.LoginWithNewUserTest@3d34d211]" started-at="2024-10-01T23:02:41 IST" name="verifyLoginWithNewUser" finished-at="2024-10-01T23:02:41 IST" duration-ms="3" status="PASS">
+        <test-method signature="verifyLoginWithNewUser()[pri:0, instance:com.onsite.login.LoginWithNewUserTest@7dc0f706]" started-at="2024-10-03T16:27:25 IST" name="verifyLoginWithNewUser" finished-at="2024-10-03T16:27:25 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithNewUser -->
       </class> <!-- com.onsite.login.LoginWithNewUserTest -->
       <class name="com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:15 IST" name="setUpDriver" finished-at="2024-10-01T23:02:28 IST" duration-ms="13505" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@3d34d211]" started-at="2024-10-03T16:26:56 IST" name="setUpDriver" finished-at="2024-10-03T16:27:09 IST" duration-ms="13740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:28 IST" name="setUp" finished-at="2024-10-01T23:02:28 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@3d34d211]" started-at="2024-10-03T16:27:09 IST" name="setUp" finished-at="2024-10-03T16:27:09 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateMaterialPurchasePage()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:28 IST" name="verifyCreateMaterialPurchasePage" finished-at="2024-10-01T23:02:41 IST" duration-ms="12520" status="PASS">
+        <test-method signature="verifyCreateMaterialPurchasePage()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@3d34d211]" started-at="2024-10-03T16:27:09 IST" name="verifyCreateMaterialPurchasePage" finished-at="2024-10-03T16:27:24 IST" duration-ms="14927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateMaterialPurchasePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:41 IST" name="teardown" finished-at="2024-10-01T23:02:41 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@3d34d211]" started-at="2024-10-03T16:27:24 IST" name="teardown" finished-at="2024-10-03T16:27:25 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:41 IST" name="quitDriver" finished-at="2024-10-01T23:02:41 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@3d34d211]" started-at="2024-10-03T16:27:25 IST" name="quitDriver" finished-at="2024-10-03T16:27:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test -->
       <class name="com.onsite.material_transfer.Create_Material_Transfer_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:01:40 IST" name="setUpDriver" finished-at="2024-10-01T23:01:54 IST" duration-ms="13674" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@ae13544]" started-at="2024-10-03T16:26:28 IST" name="setUpDriver" finished-at="2024-10-03T16:26:39 IST" duration-ms="10497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:01:54 IST" name="setup" finished-at="2024-10-01T23:01:54 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@ae13544]" started-at="2024-10-03T16:26:39 IST" name="setup" finished-at="2024-10-03T16:26:39 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCreateMaterialTransferPage()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:01:54 IST" name="verifyCreateMaterialTransferPage" finished-at="2024-10-01T23:02:14 IST" duration-ms="20511" status="PASS">
+        <test-method signature="verifyCreateMaterialTransferPage()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@ae13544]" started-at="2024-10-03T16:26:39 IST" name="verifyCreateMaterialTransferPage" finished-at="2024-10-03T16:26:55 IST" duration-ms="16597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateMaterialTransferPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:02:14 IST" name="teardown" finished-at="2024-10-01T23:02:15 IST" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@ae13544]" started-at="2024-10-03T16:26:55 IST" name="teardown" finished-at="2024-10-03T16:26:56 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:02:15 IST" name="quitDriver" finished-at="2024-10-01T23:02:15 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@ae13544]" started-at="2024-10-03T16:26:56 IST" name="quitDriver" finished-at="2024-10-03T16:26:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.onsite.material_transfer.Create_Material_Transfer_Test -->
       <class name="com.onsite.debit_note.Delete_DebitNote_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:02:41 IST" name="setUpDriver" finished-at="2024-10-01T23:02:54 IST" duration-ms="12813" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@4009e306]" started-at="2024-10-03T16:27:25 IST" name="setUpDriver" finished-at="2024-10-03T16:27:36 IST" duration-ms="11215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:02:54 IST" name="setUp" finished-at="2024-10-01T23:02:54 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@4009e306]" started-at="2024-10-03T16:27:36 IST" name="setUp" finished-at="2024-10-03T16:27:36 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_Delete_Debit_Note_Entry_Page()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:02:54 IST" name="verify_Delete_Debit_Note_Entry_Page" finished-at="2024-10-01T23:03:24 IST" duration-ms="30243" status="FAIL">
+        <test-method signature="verify_Delete_Debit_Note_Entry_Page()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@4009e306]" started-at="2024-10-03T16:27:36 IST" name="verify_Delete_Debit_Note_Entry_Page" finished-at="2024-10-03T16:28:04 IST" duration-ms="28382" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="edit-btn" and text()=" Delete "]' (tried for 20 second(s) with 500 milliseconds interval)]]>
@@ -130,9 +130,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [89ebfb5c92ae8f9bafddd06aa0089ee6, findElement {value=//div[@class="edit-btn" and text()=" Delete "], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\hr\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53749/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 89ebfb5c92ae8f9bafddd06aa0089ee6
+Command: [9847a1e4f4d021e90cb676afb21634b1, findElement {using=xpath, value=//div[@class="edit-btn" and text()=" Delete "]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\hr\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62380/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9847a1e4f4d021e90cb676afb21634b1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -163,11 +163,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Delete_Debit_Note_Entry_Page -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:03:24 IST" name="teardown" finished-at="2024-10-01T23:03:24 IST" duration-ms="279" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@4009e306]" started-at="2024-10-03T16:28:04 IST" name="teardown" finished-at="2024-10-03T16:28:05 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:03:24 IST" name="quitDriver" finished-at="2024-10-01T23:03:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@4009e306]" started-at="2024-10-03T16:28:05 IST" name="quitDriver" finished-at="2024-10-03T16:28:05 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

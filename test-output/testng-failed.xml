@@ -8,8 +8,8 @@
     <classes>
       <class name="com.onsite.debit_note.Delete_DebitNote_Test">
         <methods>
-          <include name="quitDriver"/>
           <include name="setUpDriver"/>
+          <include name="quitDriver"/>
           <include name="setUp"/>
           <include name="teardown"/>
           <include name="verify_Delete_Debit_Note_Entry_Page"/>

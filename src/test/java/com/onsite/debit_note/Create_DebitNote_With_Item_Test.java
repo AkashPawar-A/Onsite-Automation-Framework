@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.onsite.core_test.Base_Test;
 
-public class Create_DebitNote_With_Item_Test extends Base_Test{
+public class Create_DebitNote_With_Item_Test extends Base_Test {
 
 	private Create_DebitNote_With_DebitItem_Page create_DebitNote_WithItem_obj;
 
@@ -35,9 +35,9 @@ public class Create_DebitNote_With_Item_Test extends Base_Test{
 		create_DebitNote_WithItem_obj.enter_debitnote_note_text(debitnote.getProperty("DebitNote"));
 		create_DebitNote_WithItem_obj.click_debitnotepage_Save_cta();
 	}
-
+	
 	@AfterMethod
 	public void teardown() {
-		quitDriver();
+		getDriver();
 	}
 }
