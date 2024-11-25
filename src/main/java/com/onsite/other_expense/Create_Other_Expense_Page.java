@@ -77,6 +77,9 @@ public class Create_Other_Expense_Page extends Base_Page{
 	@FindBy(xpath="//ul[@class=\"tree\"]")
 	private List<WebElement> costcode_list;
 
+	@FindBy(xpath="//div[text()=\"Save\"]")
+	private WebElement costcode_save;
+
 	@FindBy(xpath="//input[@type=\"number\"]")
 	private WebElement totalNumber;
 
@@ -129,23 +132,24 @@ public class Create_Other_Expense_Page extends Base_Page{
 	}
 
 	public void expenses_party() {
-	    wait.until(ExpectedConditions.visibilityOf(expense_party));
-	    try {
-	        if (expense_party.isDisplayed()) {
-	            click_element(expense_party, "expenses_party");
-	            if (expenses_party_list.isEmpty()) {
-	                System.out.println("Party list is empty");
-	            } else if (expenses_party_list.size() > 0) {
-	                expenses_party_list.get(0).click();
-	                System.out.println("Successfully selected a party from the list");
-	            }
-	        } else {
-	            System.out.println("Expenses party dropdown is not displayed");
-	        }
-	    } catch (Exception e) {
-	        System.out.println("Unsuccessfully selected expenses party");
-	        e.printStackTrace();
-	    }
+		wait.until(ExpectedConditions.visibilityOf(expense_party));
+		try {
+			if (expense_party.isDisplayed()) {
+				click_element(expense_party, "expenses_party");
+				
+				if (expenses_party_list.isEmpty()) {
+					System.out.println("Party list is empty");
+				} else if (expenses_party_list.size() > 0) {
+					expenses_party_list.get(0).click();
+					System.out.println("Successfully selected a party from the list");
+				}
+			} else {
+				System.out.println("Expenses party dropdown is not displayed");
+			}
+		} catch (Exception e) {
+			System.out.println("Unsuccessfully selected expenses party");
+			e.printStackTrace();
+		}
 	}
 
 	public void select_checkbox() {
@@ -181,6 +185,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if(expenses_unit.isDisplayed()) {
 				click_element(expenses_unit, "expenses_unit_cta");
+				
 				if(unit_list.size() > 0) {
 					unit_list.get(2).click();
 					System.out.println("Successfully select unit : " + unit_list);
@@ -213,6 +218,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if(expenses_discount.isDisplayed()) {
 				click_element(expenses_discount, "expenses_discount");
+				
 				if(add_discount.isDisplayed())
 					set_input_field(add_discount, discount, "expenses_discount : " + discount);
 			}else {
@@ -229,6 +235,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if(additional_charges.isDisplayed()) {
 				click_element(additional_charges, "additional_charges");
+				
 				if(add_otherAmount.isDisplayed()) {
 					set_input_field(add_otherAmount, charges, "additional_charges : " + charges);
 				}else {
@@ -247,9 +254,11 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			wait.until(ExpectedConditions.visibilityOf(expenses_tax));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", expenses_tax);
+			
 			if (expenses_tax.isDisplayed()) {
 				click_element(expenses_tax, "expenses_tax");
 				wait.until(ExpectedConditions.visibilityOf(add_taxAmount));	
+				
 				if (add_taxAmount.isDisplayed()) {
 					set_input_field(add_taxAmount, tax, "expenses_tax: " + tax);
 					System.out.println("Successfully entered tax: " + tax);
@@ -270,16 +279,24 @@ public class Create_Other_Expense_Page extends Base_Page{
 		wait.until(ExpectedConditions.visibilityOfAllElements(addCostCode));
 		try {
 			if (addCostCode.isDisplayed()) {
-				click_element(addCostCode, "addCostCode");				
+				click_element(addCostCode, "addCostCode");	
+
 				if (select_costcode.isDisplayed()) {
-					click_element(select_costcode, "selectCostCode");					
+					click_element(select_costcode, "selectCostCode");	
+
 					if (costcode_list.isEmpty()) {
-						System.out.println("Cost code list is empty");
+						System.out.println("Cost code list is empty");	
 					} else if (costcode_list.size() > 0) {
 						WebElement selected = costcode_list.get(0);
-						((JavascriptExecutor) driver).executeScript("arguments[0].scrollInToView(true);", selected);
-						System.out.println("Successfully selected cost code");
-						selected.click();
+						
+						wait.until(ExpectedConditions.visibilityOf(selected));
+						((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", selected);
+	                    
+	                    System.out.println("Successfully selected cost code");
+	                    selected.click();
+	                    
+	                    wait.until(ExpectedConditions.elementToBeClickable(costcode_save));
+	                    click_element(costcode_save, "costcode_save_cta");
 					} else {
 						System.out.println("Cost code list size is invalid or exceeds limit");
 					}
