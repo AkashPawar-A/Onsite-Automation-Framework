@@ -1,177 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-01T23:01:00 IST" name="Suite" finished-at="2024-10-01T23:03:24 IST" duration-ms="144658">
+  <suite started-at="2024-11-25T17:54:24 IST" name="Default suite" finished-at="2024-11-25T17:54:47 IST" duration-ms="23112">
     <groups>
     </groups>
-    <test started-at="2024-10-01T23:01:00 IST" name="Test" finished-at="2024-10-01T23:03:24 IST" duration-ms="144658">
-      <class name="com.onsite.debit_note.Create_DebitNote_With_Item_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:00 IST" name="setUpDriver" finished-at="2024-10-01T23:01:14 IST" duration-ms="14118" status="PASS">
+    <test started-at="2024-11-25T17:54:24 IST" name="Default test" finished-at="2024-11-25T17:54:47 IST" duration-ms="23112">
+      <class name="com.onsite.other_expenses.Create_other_expenses_test">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.other_expenses.Create_other_expenses_test@4c12331b]" started-at="2024-11-25T17:54:24 IST" name="setUpDriver" finished-at="2024-11-25T17:54:36 IST" duration-ms="12253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:14 IST" name="setUp" finished-at="2024-10-01T23:01:14 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.other_expenses.Create_other_expenses_test@4c12331b]" started-at="2024-11-25T17:54:36 IST" name="setUp" finished-at="2024-11-25T17:54:36 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateDebitNoteWithItemTestPage()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:14 IST" name="verifyCreateDebitNoteWithItemTestPage" finished-at="2024-10-01T23:01:40 IST" duration-ms="25862" status="PASS">
+        <test-method signature="verifyCreateOtherExpensePage()[pri:0, instance:com.onsite.other_expenses.Create_other_expenses_test@4c12331b]" started-at="2024-11-25T17:54:36 IST" name="verifyCreateOtherExpensePage" finished-at="2024-11-25T17:54:47 IST" duration-ms="10642" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCreateDebitNoteWithItemTestPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:40 IST" name="teardown" finished-at="2024-10-01T23:01:40 IST" duration-ms="346" status="PASS">
+        </test-method> <!-- verifyCreateOtherExpensePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.onsite.other_expenses.Create_other_expenses_test@4c12331b]" started-at="2024-11-25T17:54:47 IST" name="tearDown" finished-at="2024-11-25T17:54:47 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.debit_note.Create_DebitNote_With_Item_Test@6a78afa0]" started-at="2024-10-01T23:01:40 IST" name="quitDriver" finished-at="2024-10-01T23:01:40 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.onsite.debit_note.Create_DebitNote_With_Item_Test -->
-      <class name="com.onsite.login.LoginWithNewUserTest">
-        <test-method signature="verifyLoginWithNewUser()[pri:0, instance:com.onsite.login.LoginWithNewUserTest@3d34d211]" started-at="2024-10-01T23:02:41 IST" name="verifyLoginWithNewUser" finished-at="2024-10-01T23:02:41 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNewUser -->
-      </class> <!-- com.onsite.login.LoginWithNewUserTest -->
-      <class name="com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:15 IST" name="setUpDriver" finished-at="2024-10-01T23:02:28 IST" duration-ms="13505" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:28 IST" name="setUp" finished-at="2024-10-01T23:02:28 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyCreateMaterialPurchasePage()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:28 IST" name="verifyCreateMaterialPurchasePage" finished-at="2024-10-01T23:02:41 IST" duration-ms="12520" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateMaterialPurchasePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:41 IST" name="teardown" finished-at="2024-10-01T23:02:41 IST" duration-ms="303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test@ae13544]" started-at="2024-10-01T23:02:41 IST" name="quitDriver" finished-at="2024-10-01T23:02:41 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.other_expenses.Create_other_expenses_test@4c12331b]" started-at="2024-11-25T17:54:47 IST" name="quitDriver" finished-at="2024-11-25T17:54:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test -->
-      <class name="com.onsite.material_transfer.Create_Material_Transfer_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:01:40 IST" name="setUpDriver" finished-at="2024-10-01T23:01:54 IST" duration-ms="13674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:01:54 IST" name="setup" finished-at="2024-10-01T23:01:54 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyCreateMaterialTransferPage()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:01:54 IST" name="verifyCreateMaterialTransferPage" finished-at="2024-10-01T23:02:14 IST" duration-ms="20511" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateMaterialTransferPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:02:14 IST" name="teardown" finished-at="2024-10-01T23:02:15 IST" duration-ms="335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.material_transfer.Create_Material_Transfer_Test@6f4a47c7]" started-at="2024-10-01T23:02:15 IST" name="quitDriver" finished-at="2024-10-01T23:02:15 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.onsite.material_transfer.Create_Material_Transfer_Test -->
-      <class name="com.onsite.debit_note.Delete_DebitNote_Test">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:02:41 IST" name="setUpDriver" finished-at="2024-10-01T23:02:54 IST" duration-ms="12813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:02:54 IST" name="setUp" finished-at="2024-10-01T23:02:54 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_Delete_Debit_Note_Entry_Page()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:02:54 IST" name="verify_Delete_Debit_Note_Entry_Page" finished-at="2024-10-01T23:03:24 IST" duration-ms="30243" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="edit-btn" and text()=" Delete "]' (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class="edit-btn" and text()=" Delete "]' (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.onsite.debit_note.Delete_Debit_Note_Entry_Page.click_debitnote_delete_button(Delete_Debit_Note_Entry_Page.java:66)
-at com.onsite.debit_note.Delete_DebitNote_Test.verify_Delete_Debit_Note_Entry_Page(Delete_DebitNote_Test.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="edit-btn" and text()=" Delete "]"}
-  (Session info: chrome=128.0.6613.121)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [89ebfb5c92ae8f9bafddd06aa0089ee6, findElement {value=//div[@class="edit-btn" and text()=" Delete "], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\hr\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53749}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53749/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 89ebfb5c92ae8f9bafddd06aa0089ee6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Delete_Debit_Note_Entry_Page -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:03:24 IST" name="teardown" finished-at="2024-10-01T23:03:24 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.onsite.debit_note.Delete_DebitNote_Test@7dc0f706]" started-at="2024-10-01T23:03:24 IST" name="quitDriver" finished-at="2024-10-01T23:03:24 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.onsite.debit_note.Delete_DebitNote_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.onsite.other_expenses.Create_other_expenses_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

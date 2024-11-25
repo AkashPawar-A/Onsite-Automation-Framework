@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test">
+      <class name="com.onsite.other_expenses.Create_other_expenses_test">
         <methods>
           <include name="quitDriver"/>
           <include name="setUpDriver"/>
-          <include name="teardown"/>
-          <include name="verifyCreateMaterialPurchasePage"/>
           <include name="setUp"/>
+          <include name="verifyCreateOtherExpensePage"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.onsite.material_purchase.Create_MaterialPurchaseEntry_IsPaid_Test -->
+      </class> <!-- com.onsite.other_expenses.Create_other_expenses_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

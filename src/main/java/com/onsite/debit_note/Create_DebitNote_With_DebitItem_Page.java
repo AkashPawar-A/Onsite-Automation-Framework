@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import com.onsite.base_page.Base_Page;
 
-public class Create_DebitNote_With_DebitItem_Page extends Base_Page{
+public class Create_DebitNote_With_DebitItem_Page extends Base_Page {
 
 	public Create_DebitNote_With_DebitItem_Page(WebDriver driver) {
 		super(driver);

@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.onsite.debit_note.Delete_DebitNote_Test">
+      <class name="com.onsite.material_transfer.Create_Material_Transfer_Test">
         <methods>
           <include name="quitDriver"/>
           <include name="setUpDriver"/>
-          <include name="setUp"/>
+          <include name="setup"/>
           <include name="teardown"/>
-          <include name="verify_Delete_Debit_Note_Entry_Page"/>
+          <include name="verifyCreateMaterialTransferPage"/>
         </methods>
-      </class> <!-- com.onsite.debit_note.Delete_DebitNote_Test -->
+      </class> <!-- com.onsite.material_transfer.Create_Material_Transfer_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

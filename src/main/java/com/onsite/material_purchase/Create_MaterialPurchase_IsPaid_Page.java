@@ -77,6 +77,8 @@ public class Create_MaterialPurchase_IsPaid_Page extends Base_Page {
 	@FindBy(xpath="//div[@class=\"canvas-save-btn\" and text()=\"Save\"]")
 	private WebElement materialpurchase_save_button;
 
+	@FindBy(xpath="//div[@class=\"vstack ng-tns-c3957980260-0\"]")
+	private WebElement successfully_message;
 
 	public void select_project() {
 		wait.until(ExpectedConditions.visibilityOfAllElements(all_project_list));
@@ -270,6 +272,20 @@ public class Create_MaterialPurchase_IsPaid_Page extends Base_Page {
 		}catch(Exception e) {
 			System.out.println("Unsuccecfully click_on_materialpurchase_creationpage_save_button");
 			e.printStackTrace(); }		
-		wait.until(ExpectedConditions.invisibilityOf(materialpurchase_save_button));
+		//wait.until(ExpectedConditions.invisibilityOf(materialpurchase_save_button));
+	}
+
+	public String getSuccessMessage() {
+		wait.until(ExpectedConditions.visibilityOfAllElements(successfully_message));{
+			try {
+				String message = successfully_message.getText();
+				System.out.println("textmessage :" + message);
+			}catch(Exception e) {
+				System.out.println("Unsuccecfully message");
+				e.printStackTrace(); 
+			}
+			wait.until(ExpectedConditions.invisibilityOf(successfully_message));
+		}
+		return null;
 	}
 }

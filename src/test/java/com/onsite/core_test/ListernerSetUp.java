@@ -3,15 +3,13 @@ package com.onsite.core_test;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.onsite.base_page.Base_Page;
-
-public class ListernerSetUp extends Base_Test implements ITestListener {
+public class ListernerSetUp implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) 
 	{
-		if (result.getInstance() != null && result.getInstance() instanceof Base_Page) {
-			((Base_Page)(result.getInstance())).getDriver();
+		if (result.getInstance() != null && result.getInstance() instanceof Base_Test) {
+			((Base_Test)(result.getInstance())).getDriver();
 		} else {
 		System.out.println("Test Case execution started :" + result.getName());
 		}
@@ -25,7 +23,11 @@ public class ListernerSetUp extends Base_Test implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test Case execution failure :" + result.getName());
-		//Base_Page.captureScreenshot(result.getName());
+		if (result.getInstance() instanceof Base_Test)
+			((Base_Test) result.getInstance()).captureScreenshot(result.getName());
+		else {
+			System.out.println("take screenshot failed");
+		}
 	}
 
 	@Override

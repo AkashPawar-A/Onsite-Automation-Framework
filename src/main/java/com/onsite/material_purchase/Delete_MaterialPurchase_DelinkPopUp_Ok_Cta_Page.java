@@ -33,7 +33,6 @@ public class Delete_MaterialPurchase_DelinkPopUp_Ok_Cta_Page extends Base_Page {
 	@FindBy(xpath="//div//ng-icon[@name=\"featherChevronLeft\"]")
 	private WebElement materialpurchase_editpage_backword_arrow;
 
-
 	public void select_project()
 	{
 		wait.until(ExpectedConditions.visibilityOfAllElements(all_project_list));
