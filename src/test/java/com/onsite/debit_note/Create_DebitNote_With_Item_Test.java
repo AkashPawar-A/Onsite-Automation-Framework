@@ -38,6 +38,6 @@ public class Create_DebitNote_With_Item_Test extends Base_Test {
 	
 	@AfterMethod
 	public void teardown() {
-		getDriver();
+		quitDriver();
 	}
 }

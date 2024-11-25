@@ -3,16 +3,19 @@ package com.onsite.material_purchase;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.onsite.core_test.Base_Test;
 
 public class Create_MaterialPurchaseEntry_IsPaid_Test extends Base_Test{
 
 	private Create_MaterialPurchase_IsPaid_Page Create_MaterialPurchase_IsPaid_Page_obj;
+	private SoftAssert softAssert;
 	
 	@BeforeMethod
 	public void setUp()	{
 		Create_MaterialPurchase_IsPaid_Page_obj = new Create_MaterialPurchase_IsPaid_Page(getDriver());
+		softAssert = new SoftAssert();
 	}
 
 	@Test
@@ -34,6 +37,13 @@ public class Create_MaterialPurchaseEntry_IsPaid_Test extends Base_Test{
 		Create_MaterialPurchase_IsPaid_Page_obj.enter_entrylevel_charges(materialPurchase.getProperty("charges"));
 		Create_MaterialPurchase_IsPaid_Page_obj.enter_materialpurchase_paidamount(materialPurchase.getProperty("PaidAmount"));
 		Create_MaterialPurchase_IsPaid_Page_obj.click_materialpurchase_save_button();
+		Create_MaterialPurchase_IsPaid_Page_obj.getSuccessMessage();
+	
+		String expectedMessage = "Material Purchase Entry Created Successfully";
+		String actualMessage = Create_MaterialPurchase_IsPaid_Page_obj.getSuccessMessage(); 
+
+		softAssert.assertEquals(actualMessage, expectedMessage, "Message mismatch after saving Material Purchase Entry");
+		softAssert.assertAll();
 	}
 
 	@AfterMethod

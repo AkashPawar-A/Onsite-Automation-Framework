@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.onsite.base_page.Base_Page;
 
@@ -38,11 +37,9 @@ public class UserLoginWithPasswordPage extends Base_Page{
 
 	public void open_login_country_list()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(country_Code_options_DropDown));	
 		try {
-			country_Code_options_DropDown.click();
-			System.out.println("Country dropdown is clickable");
+			click_element(country_Code_options_DropDown, "country_Code_options_DropDown");
 		} catch(Exception e) {
 			System.out.println("Country dropdown is not clickable");
 			e.printStackTrace();
@@ -51,7 +48,6 @@ public class UserLoginWithPasswordPage extends Base_Page{
 
 	public void select_login_country_name()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfAllElements(select_country_code_options));
 		try { 
 			if(select_country_code_options.size() > 0) {
@@ -69,8 +65,7 @@ public class UserLoginWithPasswordPage extends Base_Page{
 	public void enter_login_number(String LoginNumber)
 	{
 		try {
-			login_with_mobile_number.sendKeys(LoginNumber);
-			System.out.println("Successfully enter mobile number");
+			set_input_field(login_with_mobile_number, LoginNumber, "LoginNumber");
 		} catch (Exception e) {
 			System.out.println("failed to enter mobile number");
 			e.printStackTrace();
@@ -80,8 +75,7 @@ public class UserLoginWithPasswordPage extends Base_Page{
 	public void login_page_logginbutton()
 	{
 		try {
-			mobile_number_loggin_button.click();
-			System.out.println("Successfully clicked Login button");
+			click_element(mobile_number_loggin_button, "Login button");
 		} catch (Exception e) {
 			System.out.println("Unsuccessfully click on Login button");
 			e.printStackTrace();
@@ -91,8 +85,7 @@ public class UserLoginWithPasswordPage extends Base_Page{
 	public void onsite_login_password(String OnsitePassword)
 	{
 		try {
-			onsite_password_enter.sendKeys(OnsitePassword);
-			System.out.println("Successfully enter password");
+			set_input_field(onsite_password_enter, OnsitePassword, "OnsitePassword");
 		} catch (Exception e) {
 			System.out.println("unsuccessfully enter a password");
 			e.printStackTrace();
@@ -103,8 +96,7 @@ public class UserLoginWithPasswordPage extends Base_Page{
 	{
 		wait.until(ExpectedConditions.visibilityOfAllElements(password_page_next_button));
 		try {
-			password_page_next_button.click();
-			System.out.println("Successfully clicked password_page_nextbutton");
+			click_element(password_page_next_button, "password_page_next_button");
 		} catch (Exception e) {
 			System.out.println("does not click password_page_nextbutton");
 			e.printStackTrace();

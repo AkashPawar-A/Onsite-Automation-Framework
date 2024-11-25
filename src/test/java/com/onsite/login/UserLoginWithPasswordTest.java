@@ -4,18 +4,20 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.onsite.core_test.Base_Test;
 
 public class UserLoginWithPasswordTest extends Base_Test{
 	
 	private UserLoginWithPasswordPage Create_MaterialPurchase_IsPaid_Page_obj;
+	private SoftAssert softAssert;
 	
 	@BeforeMethod
 	public void setUp()	{
 		Create_MaterialPurchase_IsPaid_Page_obj = new UserLoginWithPasswordPage(getDriver());
+		softAssert = new SoftAssert();
 	}
-
 
 	@Test
 	public void verifyUserLoginWithPasswordTestPage() {
@@ -29,7 +31,8 @@ public class UserLoginWithPasswordTest extends Base_Test{
 		userLoginWithPasswordPage_obj.password_page_nextbutton();
 	
 		String actualUrl = getDriver().getCurrentUrl();
-		Assert.assertEquals(actualUrl, expectedUrl, "The URL after login does not match the expected URL.");
+		softAssert.assertEquals(actualUrl, expectedUrl, "The URL after login does not match the expected URL.");
+		softAssert.assertAll();
 	}
 
 	@AfterMethod
