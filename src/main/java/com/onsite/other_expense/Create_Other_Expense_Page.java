@@ -81,7 +81,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 	private WebElement costcode_save;
 
 	@FindBy(xpath="//input[@type=\"number\"]")
-	private WebElement totalNumber;
+	private WebElement totalExpensesAmount;
 
 	@FindBy(xpath="//div[text()=\"Save\"]")
 	private WebElement expenses_save;
@@ -104,7 +104,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 	}
 
 	public void click_transaction_tab() {
-		wait.until(ExpectedConditions.visibilityOf(projectlevel_transaction_tab));
+		wait.until(ExpectedConditions.visibilityOfAllElements(projectlevel_transaction_tab));
 		try{
 			if(projectlevel_transaction_tab.isDisplayed()) {
 				click_element(projectlevel_transaction_tab, "project_transaction_tab");
@@ -136,7 +136,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if (expense_party.isDisplayed()) {
 				click_element(expense_party, "expenses_party");
-				
+
 				if (expenses_party_list.isEmpty()) {
 					System.out.println("Party list is empty");
 				} else if (expenses_party_list.size() > 0) {
@@ -185,13 +185,17 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if(expenses_unit.isDisplayed()) {
 				click_element(expenses_unit, "expenses_unit_cta");
-				
-				if(unit_list.size() > 0) {
-					unit_list.get(2).click();
-					System.out.println("Successfully select unit : " + unit_list);
-				}else {
-					System.out.println("No unit available to select");
+
+				if (unit_list.size() > 0) {
+					WebElement selected = unit_list.get(15);
+					((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", selected);
+					System.out.println("Successfully selected unit: " + selected);
+					selected.click();
+				} else {
+					System.out.println("The unit list is too small. Not enough units to select");
 				}
+			} else {
+				System.out.println("No unit available to select");
 			}
 		}catch(Exception e) {
 			System.out.println("Unsuccessfully select the unit");
@@ -218,7 +222,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if(expenses_discount.isDisplayed()) {
 				click_element(expenses_discount, "expenses_discount");
-				
+
 				if(add_discount.isDisplayed())
 					set_input_field(add_discount, discount, "expenses_discount : " + discount);
 			}else {
@@ -235,7 +239,7 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			if(additional_charges.isDisplayed()) {
 				click_element(additional_charges, "additional_charges");
-				
+
 				if(add_otherAmount.isDisplayed()) {
 					set_input_field(add_otherAmount, charges, "additional_charges : " + charges);
 				}else {
@@ -254,11 +258,11 @@ public class Create_Other_Expense_Page extends Base_Page{
 		try {
 			wait.until(ExpectedConditions.visibilityOf(expenses_tax));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", expenses_tax);
-			
+
 			if (expenses_tax.isDisplayed()) {
 				click_element(expenses_tax, "expenses_tax");
 				wait.until(ExpectedConditions.visibilityOf(add_taxAmount));	
-				
+
 				if (add_taxAmount.isDisplayed()) {
 					set_input_field(add_taxAmount, tax, "expenses_tax: " + tax);
 					System.out.println("Successfully entered tax: " + tax);
@@ -288,15 +292,15 @@ public class Create_Other_Expense_Page extends Base_Page{
 						System.out.println("Cost code list is empty");	
 					} else if (costcode_list.size() > 0) {
 						WebElement selected = costcode_list.get(0);
-						
+
 						wait.until(ExpectedConditions.visibilityOf(selected));
 						((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", selected);
-	                    
-	                    System.out.println("Successfully selected cost code");
-	                    selected.click();
-	                    
-	                    wait.until(ExpectedConditions.elementToBeClickable(costcode_save));
-	                    click_element(costcode_save, "costcode_save_cta");
+
+						System.out.println("Successfully selected cost code");
+						selected.click();
+
+						wait.until(ExpectedConditions.elementToBeClickable(costcode_save));
+						click_element(costcode_save, "costcode_save_cta");
 					} else {
 						System.out.println("Cost code list size is invalid or exceeds limit");
 					}
@@ -313,13 +317,18 @@ public class Create_Other_Expense_Page extends Base_Page{
 	}
 
 	public void totalAmount() {
-		wait.until(ExpectedConditions.visibilityOf(totalNumber));
+		wait.until(ExpectedConditions.visibilityOf(totalExpensesAmount));
 		try {
-			String totalamount = totalNumber.getText();
-			if(totalamount.isEmpty()) {
-				System.out.println("Total amount field is visible but empty.");
+			if(totalExpensesAmount.isDisplayed()) {
+				String totalamount = totalExpensesAmount.getText();
+				
+				if(totalamount.isEmpty()) {
+					System.out.println("Total amount field is visible but empty.");
+				}else {
+					System.out.println("Total amount field is visible but empty :" + totalamount);
+				}
 			} else {
-				System.out.println("Total amount :" + totalamount);
+				System.out.println("Total amount field is visible but empty.");
 			}	
 		}catch(Exception e) {
 			System.out.println("Unsuccessfully fetch total number");

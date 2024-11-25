@@ -1,6 +1,5 @@
 package com.onsite.login;
 
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
