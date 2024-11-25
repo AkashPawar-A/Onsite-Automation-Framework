@@ -88,7 +88,6 @@ public class Create_MaterialPurchase_IsPaid_Page extends Base_Page {
 		}catch(Exception e) {
 			System.out.println("Unsuccessfully select project");
 			e.printStackTrace();
-			//comment 2
 		}
 	}
 
